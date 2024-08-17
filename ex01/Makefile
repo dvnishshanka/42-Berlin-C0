@@ -1,5 +1,5 @@
 CLANG = clang++
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -std=c++98
 RM = rm -f
 NAME = phonebook
 SRCS = src/main.cpp

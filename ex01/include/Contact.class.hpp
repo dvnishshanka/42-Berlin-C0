@@ -24,7 +24,7 @@ class Contact
 	private:
 
 	static int	_sIndex;
-	int	_index = -1;
+	int	_index;
 	std::string	_firstName;
 	std::string	_lastName;
 	std::string	_nickname;

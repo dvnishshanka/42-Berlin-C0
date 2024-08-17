@@ -12,7 +12,6 @@ class PhoneBook
 	void	saveContactToPhoneBook(Contact contact);
 	void	searchContact(void) const;
 
-
 	private:
 
 	Contact	_contacts[8];
