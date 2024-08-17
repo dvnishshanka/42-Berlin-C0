@@ -2,14 +2,13 @@ CLANG = clang++
 CFLAGS = -Wall -Wextra -Werror
 RM = rm -f
 NAME = phonebook
-SRCS = main.cpp Contact.cpp
+SRCS = src/main.cpp
 INCLUDE = -I include
-# PhoneBook.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 
 # Compile source files into into object files
-%.o: %.cpp Contact.hpp PhoneBook.hpp
+%.o: %.cpp
 	$(CLANG) $(CFLAGS) -c $< -o $@
 
 all : $(NAME)
